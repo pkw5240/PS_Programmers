@@ -6,7 +6,6 @@ public class IntSortReverseOrder {
     public long solution(long n) {
         long answer = 0;
         String[] nums = Long.toString(n).split("");
-        Arrays.stream(nums).map()
         Arrays.sort(nums, Comparator.reverseOrder());
         String tmp = "";
         for (int i = 0; i < nums.length; i++) {
