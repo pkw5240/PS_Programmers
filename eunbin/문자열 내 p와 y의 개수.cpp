@@ -1,20 +1,16 @@
-#include <bits/stdc++.h>
+#include <string>
+#include <iostream>
 using namespace std;
 
+int pc,yc;
+
 bool solution(string s)
-{   
-    int pnum=0, ynum = 0;
+{
+    bool answer = true;
     
-    for(int i = 0; i < s.length(); i++){
-        
-        if( s[i] == 'p' || s[i] == 'P') pnum++;
-            
-        if( s[i] == 'y' || s[i] == 'Y') ynum++;
-     
+    for(int i=0;i<s.length();i++)  {
+        if(s[i]=='p'||s[i]=='P') pc++;
+        if(s[i]=='y'||s[i]=='Y') yc++;
     }
-        
-    if( pnum == ynum ) return true;
-    else return false;
-    
-    
+    return pc==yc;
 }
