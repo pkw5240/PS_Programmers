@@ -2,16 +2,10 @@
 
 using namespace std;
 
-vector<char> v;
-
-string solution(string s) {
-    string answer = "";
+long long solution(long long n) {
+    long long answer = 0;
+    string s = to_string(n);
+    sort(s.begin(),s.end(),greater());
     
-    for(int i=0;i<s.length();i++){
-        v.push_back(s[i]);
-    }
-    sort(v.begin(),v.end(),greater<char>());
-    
-    for(char c:v) answer+=c;
-    return answer;
+    return stoll(s);
 }
