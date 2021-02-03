@@ -6,6 +6,7 @@ https://programmers.co.kr/
 2021.01.19 - 첫 코드 리뷰  
 2021.01.20 - README 작성  
 2021.01.29 - Level 1 클리어
+2021.02.01 - Level 2 시작
 
 ---
 
